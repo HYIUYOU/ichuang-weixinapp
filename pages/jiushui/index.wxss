@@ -1,0 +1,158 @@
+/* pages/shipu/index.wxss */
+.swiper-item {
+  display: block;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+swiper {
+  width: 100%;
+}
+
+.content {
+  font-family: "Microsoft YaHei";
+}
+
+.search {
+  width: 100%;
+  background-color: #E53D30;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Microsoft YaHei";
+  position: fixed;
+  z-index: 999;
+}
+
+.searchInput {
+  width: 95%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+}
+
+.searchInput image {
+  position: absolute;
+  top: 7px;
+  left: 15px;
+}
+
+.searchContent {
+  font-size: 13px;
+  height: 28px;
+  line-height: 28px;
+  color: #777777;
+  margin-left: 30px;
+}
+
+.type {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  background: #f2f2f2;
+  top: 40px;
+}
+
+.type view {
+  margin: 0 auto;
+}
+
+.select {
+  font-size: 164x;
+  font-weight: bold;
+  width: 25%;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 5rpx solid #E53D30;
+  color: #E53D30;
+}
+
+.default {
+  width: 25%;
+  font-size: 14px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+
+.list {
+  margin-top: 0;
+}
+
+.eventListOut {
+  width: 100%;
+}
+
+.eventList {
+  width: 97%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 12px 10px 12px;
+  margin: 5px;
+  border: 1px solid #c0ecfa;
+}
+
+.listIn {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid white;
+}
+
+.listImg {
+  flex: 0 0 100px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.eventImgs {
+  width: 100%;
+  height: 80px;
+}
+
+.eventTitle .title {
+  font-size: 16px;
+  color: #595959;
+}
+
+.eventTitle .type {
+  font-size: 14px;
+  color: #595959;
+}
+
+.eventTitle .detail {
+  font-size: 14px;
+  color: #595959;
+}
+
+.eventTitle .name {
+  font-size: 12px;
+  color: #80bd01;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: bold;
+  color: #E53D30;
+  margin-left: 5px;
+}
+
+.pic image {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+
+.thing {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 999;
+}

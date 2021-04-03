@@ -1,0 +1,88 @@
+<!--pages/my/index.wxml-->
+<import src="/pages/my/index.wxml" />
+<view class="main">
+<view class="TOP">
+<view wx:if="{{userinfo.avatarUrl}}" class="header-box"> 
+<image class="avatar" src="{{userinfo.avatarUrl}}"></image>
+  <view>
+   <text style="width:30vw">{{userinfo.nickName}}</text>  
+  </view>
+</view> 
+<view wx:else class="header-box" wx:key="{{ne}}">
+  <image class="avatar" src="/pages/images/nologin2.png"></image>
+  <button type="primary" class="zuche" bindtap="denglu" style="width:30vw">登陆</button>
+  <button type="primary" class="zuche" bindtap="zhuce"style="width:30vw">注册</button>
+</view>
+</view>
+<view class="middle" wx:for="{{ne}}">
+    <view class='item'>
+      <view>{{item.balance}}</view>
+      <view>温度</view>
+    </view>
+    <view class='item right'>
+      <view>{{item.discout}}</view>
+      <view>湿度</view>
+    </view>
+    <view class='item right'>
+      <view>{{item.score}}</view>
+      <view>容量</view>
+    </view>
+    <view class='item right'>
+      <view>{{item.gameC}}</view>
+      <view>用电量</view>
+    </view>
+</view>
+<view class="line"></view>
+<view class="bottom">
+  <view class='items' bindtap='gozhurou' data-type="0">
+      <view wx:if="{{count_id_no_pay !== 0}}" class='dot'>{{count_id_no_pay}}</view>
+      <image class="icon" src="/pages/images/猪肉.png" background-size="cover"></image>
+      <view class='text'>猪肉</view>
+    </view>
+    <view class='items' bindtap='gojirou' data-type="1">
+      <view wx:if="{{count_id_no_transfer !== 0}}" class='dot'>{{count_id_no_transfer}}</view>
+      <image class="icon" src="/pages/images/鸡肉.png" background-size="cover"></image>
+      <view class='text'>鸡肉</view>
+    </view>
+    <view class='items' bindtap='goniurou' data-type="2">
+      <view wx:if="{{count_id_no_confirm !== 0}}" class='dot'>{{count_id_no_confirm}}</view>
+      <image class="icon" src="/pages/images/牛肉.png" background-size="cover"></image>
+      <view class='text'>牛肉</view>
+    </view>
+    <view class='items' bindtap='goyinliao' data-type="3">
+      <view wx:if="{{count_id_no_reputation !== 0}}" class='dot'>{{count_id_no_reputation}}</view>
+      <image class="icon" src="/pages/images/饮料.png" background-size="cover"></image>
+      <view class='text'>饮料</view>
+    </view>
+    <view class='items' bindtap='gojiushui' data-type="99">
+      <image class="icon" src="/pages/images/酒水.png" background-size="cover"></image>
+      <view class='text'>酒水</view>
+    </view>
+  </view>
+<view class="bottom">
+  <view class='items' bindtap='gomian' data-type="0">
+      <view wx:if="{{count_id_no_pay !== 0}}" class='dot'>{{count_id_no_pay}}</view>
+      <image class="icon" src="/pages/images/面.png" background-size="cover"></image>
+      <view class='text'>面</view>
+    </view>
+    <view class='items' bindtap='goyu' data-type="1">
+      <view wx:if="{{count_id_no_transfer !== 0}}" class='dot'>{{count_id_no_transfer}}</view>
+      <image class="icon" src="/pages/images/鱼.png" background-size="cover"></image>
+      <view class='text'>鱼</view>
+    </view>
+    <view class='items' bindtap='goshucai' data-type="2">
+      <view wx:if="{{count_id_no_confirm !== 0}}" class='dot'>{{count_id_no_confirm}}</view>
+      <image class="icon" src="/pages/images/蔬菜.png" background-size="cover"></image>
+      <view class='text'>蔬菜</view>
+    </view>
+    <view class='items' bindtap='goshuiguo' data-type="3">
+      <view wx:if="{{count_id_no_reputation !== 0}}" class='dot'>{{count_id_no_reputation}}</view>
+      <image class="icon" src="/pages/images/水果.png" background-size="cover"></image>
+      <view class='text'>水果</view>
+    </view>
+    <view class='items' bindtap='gojidan' data-type="99">
+      <image class="icon" src="/pages/images/鸡蛋.png" background-size="cover"></image>
+      <view class='text'>鸡蛋</view>
+    </view>
+</view>
+</view>

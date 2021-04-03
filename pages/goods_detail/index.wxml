@@ -1,0 +1,38 @@
+<!--pages/goods_detail/index.wxml-->
+<view wx:for="{{eventList}}">
+
+	<image class="img" src="{{item.pic}}" mode="widthFix"></image>
+	<view class="goods_infor_top">
+		<view class="title">
+			{{item.name}}
+		</view>
+		<!-- <view class="price">
+			推荐指数：{{item.price}} 
+		</view> -->
+	</view>
+	<!-- <view class="goods_deliver">
+		
+	</view> -->
+	
+	<view class="goods_infor_raw">
+		<view class="goods_infor_item">
+			<text>【主料】</text>{{item.name1}}
+		</view>
+		<view class="goods_infor_item">
+			<text>【辅料】</text>{{item.name2}}
+		</view>
+		<view class="goods_infor_item">
+			<text>【详细介绍】</text>{{item.detail}}
+		</view>
+		
+	</view>
+	<view class="goods_infor_pre">
+		<view class="goods_infor_txt">
+			<view class="goods_infor_brand"></view>
+			【制作方法】{{item.mean}}
+	
+		</view>
+	</view>
+</view>
+
+<view class="goods_bottom"></view>

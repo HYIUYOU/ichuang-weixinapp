@@ -1,0 +1,47 @@
+<!--pages/assets/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+	<block wx:for="{{imgUrls}}">
+		<swiper-item>
+			<image src="{{item}}" class="slide-image" />
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="type">
+	<view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchNav">虚拟货币</view>
+	<view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav">优惠券</view>
+	<view class="{{currentTab==2?'select':'default'}}" data-current="2" bindtap="switchNav">软件会员</view>
+	<view class="{{currentTab==3?'select':'default'}}" data-current="3" bindtap="switchNav">其他</view>
+</view>
+<view class="hr"></view>
+
+<scroll-view scroll-y style="flex:1;overflow:hidden;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+	<view class="list">
+		<view class="eventListOut" wx:for="{{eventList}}" wx:key="my_id">
+			<view class="eventList" data-id="{{item.id}}" bindtap="seeDetail">
+				<view class="eventTitle" style="word-break:break-all;">
+					<view class="title">
+						公司名：{{item.title}}
+					</view>
+					<view class="thing">
+						<view class="pic">
+							<image src="{{item.image}}" mode="aspectFit" style="width:60px;height:60px;"></image>
+						</view>
+						<view class="thing2">
+							<view class="name">
+								货币名：{{item.title}}
+							</view>
+							<view class="detail">
+								一句话介绍：{{item.detail}}
+							</view>
+							<view class="price">
+								今日价格：{{item.price}}
+							</view>
+
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

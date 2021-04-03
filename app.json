@@ -1,0 +1,55 @@
+
+{
+  "pages": [
+
+    "pages/login/login",
+    "pages/my/index",
+    "pages/user/user",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/hall/hall",
+    "pages/logs/logs",
+    "pages/goods_detail/index",
+    "pages/asset/index",
+    "pages/styles/styles",
+    "pages/order-list/index",
+    "pages/assets/index",
+    "pages/deal/index",
+    "pages/zhurou/index",
+    "pages/jirou/index",
+    "pages/niurou/index",
+    "pages/yinliao/index",
+    "pages/jiushui/index",
+    "pages/mian/index",
+    "pages/yu/index",
+    "pages/shucai/index",
+    "pages/shuiguo/index",
+    "pages/jidan/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E53D30",
+    "navigationBarTitleText": "iChuang",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/hall/hall",
+        "text": "首页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home-fill.png"
+      },
+     
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "pages/images/bussiness-man.png",
+      "selectedIconPath": "pages/images/bussiness-man-fill.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+ 
+}

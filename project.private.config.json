@@ -1,0 +1,68 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "大厅",
+          "pathName": "pages/hall/hall",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "登陆界面",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "个人中心",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "详情",
+          "pathName": "pages/goods_detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/index",
+          "pathName": "pages/test/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jidan/index",
+          "pathName": "pages/jidan/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jirou/index",
+          "pathName": "pages/jirou/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/zhurou/index",
+          "pathName": "pages/zhurou/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
